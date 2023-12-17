@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="ギフトコードやビルド構成など扱っています．魑魅魍魎10服でメイン活動中です．">
+	<meta name="keywords" content="トントン，　妖遊記，　ギフトコード，　シリアルコード，　百鬼繚乱，　Re:Oni，　おに">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<title>妖遊記攻略</title>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-S0T2GZCMYM"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-S0T2GZCMYM');
+	</script>
+</head>
+
+
+<body>
+	<!-- サイドバー -->
+	<aside class="sidebar">
+		<header class="sidebar-header">
+			<span>
+				<img src="tonton.png" class="logo-img" alt="tonton画像">
+				トントン攻略
+			</span>
+		</header>
+		<!-- ナビゲーター -->
+		<nav>
+			<!-- ホームボタン -->
+			<button id="homeButton">
+				<span>
+					<i class='bx bx-home'></i>
+					<span>Home</span>
+				</span>
+			</button>
+			<!-- ギフトコードボタン -->
+			<button id="giftcodeButton">
+				<span>
+					<i class='bx bx-gift'></i>
+					<span>Giftcode</span>
+				</span>
+			</button>
+			<!-- 問い合わせボタン -->
+			<button id="formsButton">
+				<span>
+					<i class='bx bxl-telegram'></i>
+					<span>Forms</span>
+				</span>
+			</button>
+			<!-- インフォーメーションボタン -->
+			<button>
+				<span>
+					<i class='bx bx-info-circle'></i>
+					<span>Info</span>
+				</span>
+			</button>
+		</nav>
+	</aside>
+
+	<!-- メインコンテンツ -->
+	<div class="content">
+		<!-- ホームコンテンツ -->
+		<div id="homeContent" class="content-section">
+			<!-- 基本カテゴリ -->
+			現在準備中です．ギフトコードをご覧ください．
+			<div class="category">
+				<h2>基本要素</h2>
+				<div class="card-container">
+					<div class="card" data-id="soubi-modal">
+						<div class="card-body">
+							<h3 class="modal-link" data-modal-id="soubi-modal" data-target="modal-title-soubi">装備</h3>
+							<p class="modal-link" data-modal-id="soubi-modal" data-target="modal-subtitle-1">選び方</p>
+							<p class="modal-link" data-modal-id="soubi-modal" data-target="modal-subtitle-2">
+								良い装備を手に入れるには</p>
+						</div>
+					</div>
+
+					<div class="card" data-id="reiju-modal">
+						<div class="card-body">
+							<h3>霊獣</h3>
+							<p class="modal-link" data-modal-id="reiju-modal" data-target="modal-subtitle-1">ここですな</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>精霊</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>法宝</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>乗物</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+				</div>
+				<!-- モーダル一覧 -->
+				<div id="soubi-modal" class="modal"></div>
+				<div id="reiju-modal" class="modal"></div>
+			</div>
+
+			<!-- 洞天カテゴリ-->
+			<div class="category">
+				<h2>洞天</h2>
+				<div class="card-container">
+					<div class="card">
+						<div class="card-body">
+							<h3>集霊の陣</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>装備精錬</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>仙郷</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>仙友</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>仙営</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>幻境閣</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>乾坤袋</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 挑戦カテゴリ -->
+			<div class="category">
+				<h2>挑戦</h2>
+				<div class="card-container">
+					<div class="card">
+						<div class="card-body">
+							<h3>腕試し</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>妖王</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>奇獣の侵入</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>妖魔の塔</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>群雄風雲</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>六道秘境</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>星宿の試練</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- イベントカテゴリ -->
+			<div class="category">
+				<h2>イベント</h2>
+				<div class="card-container">
+					<div class="card">
+						<div class="card-body">
+							<h3></h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>カードタイトル2</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>カードタイトル3</h3>
+							<p>カードの詳細がここに入ります</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ギフトコード -->
+		<div id="giftcodeContent" class="content-section" style="display: none;">
+			<!-- ギフトコード入力サイトボタン -->
+			<a href="https://gevents.37games.com/globalexchange/index.html?gameId=337" target="_blank"
+				rel="noopener noreferrer" class="sample3_btn">ギフトコード入力はこちらから</a>
+
+			<!-- 新規カテゴリ -->
+			<div class="category">
+				<h2>新規</h2>
+				<div class="container">
+
+				</div>
+			</div>
+
+			<!-- 使用可能カテゴリ -->
+			<div class="category">
+				<h2>使用可能</h2>
+				<div class="card-container">
+					<div class="card">
+						<div class="card-body">
+							<h3>VIP777</h3>
+							<p>ツイッター専属パックⅠ<br>仙玉 × 50<br>仙桃　× 50<br>始祖霊草　× 50<br>引魂符 × 1</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>TREE111</h3>
+							<p>ツイッター専属パックⅡ<br>始祖霊草 × 60<br>霊獣果　× 500<br>瑠璃珠　× 10<br>霊石 × 10000</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>PIG2023</h3>
+							<p>ツイッター専属パックⅢ<br>天成符 × 40<br>仙金　× 40<br>崑崙鉄　× 20<br>道書 × 20</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>BIRD2023</h3>
+							<p>ツイッター専属パックⅣ<br>御霊石 × 50<br>仙桃　× 20<br>引魂符　× 1<br>霊獣果 × 400</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>FISH2023</h3>
+							<p>ツイッター専属パックⅤ<br>仙玉 × 100<br>仙桃　× 100<br>始祖霊草　× 100<br>引魂符 × 2</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>TOP2023</h3>
+							<p>ツイッター専属パックⅧ<br>御霊石 × 100<br>仙桃　× 40<br>引魂符　× 2<br>霊獣果 × 800</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>PIG666</h3>
+							<p>ギフトパックⅠ<br>仙玉 × 100<br>仙桃　× 50<br>霊獣果　× 2000<br>霊石 × 10000</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>BIG888</h3>
+							<p>ギフトパックⅡ<br>卸霊石 × 40<br>仙玉　× 500<br>仙桃　× 200<br>引魂符 × 5</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>BIGPIG2023</h3>
+							<p>ギフトパックⅢ<br>仙玉 × 50<br>仙桃　× 50<br>引魂符　× 4<br>始祖霊草 × 20<br>霊獣果　× 20<br>霊石　× 10000</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>AXE888</h3>
+							<p>ギフトパックⅣ<br>御霊石　× 50<br>天成符 × 10<br>仙金　× 50<br>崑崙鉄　× 50<br>始祖霊草 ×　50</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>PEACH888</h3>
+							<p>ギフトパックⅤ<br>仙玉 × 100<br>仙桃　× 100<br>仙金　× 50<br>引魂符 × 3<br>瑠璃珠 × 20<br>道書　× 30</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>GIKO777</h3>
+							<p>GIKO777パック<br>仙玉 × 50<br>仙桃　× 50<br>始祖霊草　× 50<br>引魂符 × 1</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>SUPER999</h3>
+							<p>super999パック<br>仙玉 × 50<br>仙桃　× 50<br>始祖霊草　× 50<br>引魂符 × 1</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-body">
+							<h3>ユーザセンター→攻略サイト→パック受け取り</h3>
+							<p>お気に入り報酬<br>仙玉 × 50<br>仙桃　× 50<br>霊獣果　× 500<br>霊石 × 500<br>引魂符号　× 2</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 使用不可カテゴリ -->
+			<div class="category">
+				<h2>使用不可</h2>
+				<div class="card-container">
+					<div class="card">
+						<div class="card-body">
+							<h3>JSH999</h3>
+							<p>もらえるもの</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 問い合わせ -->
+	<div class="content">
+		<div id="formsContent" class="content-section" style="display: none;">
+			問い合わせできるようにしようかなと
+		</div>
+	</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
