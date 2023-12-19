@@ -271,6 +271,17 @@ body {
 	width: 80%;
 }
 
+.modal-content h3{
+	background-color: rgba(12, 12, 13, 0.1);
+	border-left: 5px solid #007bff;
+	margin: 20px 0;
+	padding: 10px;
+	font-size: 1.2em;
+}
+.modal-content h3 p{
+	margin: 0;
+}
+
 .modal-scrollable-content {
 	max-height: calc(80vh - 100px);
 	overflow-y: auto;
