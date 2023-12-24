@@ -196,6 +196,9 @@ body {
 		display: flex;
 	}
 
+	.no-scroll{
+		overflow: hidden;
+	}
 	.sidebar button span span {
 		display: none;
 	}

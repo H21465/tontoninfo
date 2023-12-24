@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				.then(html => {
 					modal.innerHTML = html;
 					modal.style.display = 'block';
+					document.body.classList.add('no-scroll');//add
 					document.getElementById(targetId).scrollIntoView({
 						behavior: 'smooth',
 						block: 'start'
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					document.querySelectorAll('.modal .close-button').forEach(button => {
 						button.addEventListener('click', function () {
 							this.closest('.modal').style.display = 'none';
+							document.body.classList.remove('no-scroll');//add
 						});
 					});
 				})
@@ -58,9 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
 				.then(html => {
 					modal.innerHTML = html;
 					modal.style.display = 'block';
+					document.body.classList.add('no-scroll');
 					modal.querySelectorAll('.close-button').forEach(button => {
 						button.addEventListener('click', function () {
 							modal.style.display = 'none';
+							document.body.classList.remove('no-scroll');//add
 						});
 					});
 				})
