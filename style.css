@@ -306,6 +306,27 @@ body {
 	cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* モーダルの幅を広げる */
+        margin: 10% auto; /* 上下のマージンを調整 */
+    }
+
+    .modal-content h3 {
+        font-size: 1em; /* フォントサイズを小さくする */
+    }
+}
+
+/* さらに小さい画面サイズ用のメディアクエリ */
+@media (max-width: 480px) {
+    .modal-content {
+        margin: 15% auto; /* 上下のマージンをさらに大きく */
+    }
+
+    .modal-content h3 {
+        font-size: 0.9em; /* フォントサイズをさらに小さく */
+    }
+}
 /* リンクをわかりやすく示すための設定 */
 .sample3_btn {
 	padding: 12px 25px;
