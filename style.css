@@ -176,10 +176,17 @@ body {
 
 .card-body {
 	padding: 15px;
+	/* 以下追加 */
+	/* display: flex; */
+	/* justify-content: space-between; */
 }
 
 .card p {
 	color: #555;
+	/* 以下追加 */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
@@ -211,14 +218,29 @@ body {
 
 	.card {
 		width: calc(50% - 20px);
+		align-items: center;
+		justify-content: start;
 	}
 
-	p.modal-link{
-		display: none;
+	.card-body{
+		display: flex;
+	}
+	.card-left{
+		flex: 0 0 auto;
+		align-items: center;
 	}
 
-	p.modal-no-link{
-		display: none;
+	.card-right{
+		margin: 0;
+		align-items: center;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.card-right p{
+		line-height: 1.2;
+		margin: 0;
+		padding: 0;
 	}
 }
 

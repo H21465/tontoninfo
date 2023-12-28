@@ -2,6 +2,17 @@ document.addEventListener("DOMContentLoaded", function () {
 	const buttons = document.querySelectorAll('.sidebar button');
 	const contentSections = document.querySelectorAll('.content-section');
 
+	function updateModalLinkClass() {
+        const modalLinks = document.querySelectorAll('.modal-link');
+        if (window.innerWidth <= 768) {
+            modalLinks.forEach(link => link.classList.remove('modal-link'));
+        } else {
+            modalLinks.forEach(link => link.classList.add('modal-link'));
+        }
+    }
+    window.addEventListener('resize', updateModalLinkClass);
+    updateModalLinkClass();
+
 	function showSection(sectionId) {
 		contentSections.forEach(section => {
 			section.style.display = 'none';
@@ -43,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					document.querySelectorAll('.modal .close-button').forEach(button => {
 						button.addEventListener('click', function () {
 							this.closest('.modal').style.display = 'none';
-							document.body.classList.remove('no-scroll');//add
+							document.body.classList.remove('no-scroll');
 						});
 					});
 				})
@@ -64,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					modal.querySelectorAll('.close-button').forEach(button => {
 						button.addEventListener('click', function () {
 							modal.style.display = 'none';
-							document.body.classList.remove('no-scroll');//add
+							document.body.classList.remove('no-scroll');
 						});
 					});
 				})
