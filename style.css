@@ -222,22 +222,24 @@ body {
 		justify-content: start;
 	}
 
-	#homeContent .card-body{
+	#homeContent .card-body {
 		display: flex;
 	}
-	.card-left{
+
+	.card-left {
 		flex: 0 0 auto;
 		align-items: center;
 	}
 
-	.card-right{
+	.card-right {
 		margin: 0;
 		align-items: center;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
-	.card-right > p{
+
+	.card-right>p {
 		line-height: 1.2;
 		margin: 0;
 		padding: 0;
