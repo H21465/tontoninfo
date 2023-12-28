@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
-	showSection('homeContent');
-	document.getElementById('homeButton').classList.add('active');
+	showSection('giftcodeContent');//初期画面
+	document.getElementById('giftcodeButton').classList.add('active');
 
 
 	document.querySelectorAll('.modal-link').forEach(link => {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				.then(html => {
 					modal.innerHTML = html;
 					modal.style.display = 'block';
-					document.body.classList.add('no-scroll');//add
+					document.body.classList.add('no-scroll');
 					document.getElementById(targetId).scrollIntoView({
 						behavior: 'smooth',
 						block: 'start'
