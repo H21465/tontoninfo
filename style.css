@@ -222,7 +222,7 @@ body {
 		justify-content: start;
 	}
 
-	.card-body{
+	#homeContent .card-body{
 		display: flex;
 	}
 	.card-left{
@@ -237,7 +237,7 @@ body {
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
-	.card-right p{
+	.card-right > p{
 		line-height: 1.2;
 		margin: 0;
 		padding: 0;
