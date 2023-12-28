@@ -212,6 +212,14 @@ body {
 	.card {
 		width: calc(50% - 20px);
 	}
+
+	p.modal-link{
+		display: none;
+	}
+
+	p.modal-no-link{
+		display: none;
+	}
 }
 
 @media (max-width: 480px) {
