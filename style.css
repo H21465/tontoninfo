@@ -434,3 +434,13 @@ body {
 .profile-intro {
 	font-size: 12px;
 }
+
+/* 表の見た目を調整 */
+th, td{
+	padding: 15x;
+	text-align: center;
+}
+
+table{
+	border-collapse: collapse;
+}
